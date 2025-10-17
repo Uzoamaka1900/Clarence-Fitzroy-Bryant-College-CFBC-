@@ -1,7 +1,6 @@
 ---
 layout: page
-title: "About the Archive"
-permalink: /archive/about/
+title: "About"
+permalink: /about/
 ---
-
-Draft content here…
+Intro to the CFBC Digital Collection.
