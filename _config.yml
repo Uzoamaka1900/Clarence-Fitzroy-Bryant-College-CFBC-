@@ -6,21 +6,20 @@
 
 ##########
 # SITE IDENTITY
-title: "Clarence-Fitzroy-Bryant-College-(CFBC)"
+title: "Clarence-Fitzroy-Bryant-College (CFBC)"
 tagline: "Open access collection of texts, maps, and images"
-description: "A digital collection on the history of Clarence Fitzroy Bryant College (CFBC_."
-author: "Liburd Tavernier, Willa "
+description: "A digital collection on the history of Clarence Fitzroy Bryant College (CFBC)."
+author: "Liburd Tavernier, Willa"
 
 ##########
-# URLS (set these to match your GitHub Pages setup)
-# If this is a *project* site: url = https://<user>.github.io  AND baseurl = /<repo>
-# If this is a *user/org* site: url = https://<user>.github.io AND baseurl = ""
-url: "https://uzoamaka1900.github.io/Clarence-Fitzroy-Bryant-College-CFBC-/"
-baseurl: "/your-repo"
+# URLS (GitHub Pages deployment)
+# If this is hosted at: https://uzoamaka1900.github.io/Clarence-Fitzroy-Bryant-College-CFBC-
+url: "https://uzoamaka1900.github.io"
+baseurl: "/Clarence-Fitzroy-Bryant-College-CFBC-"
 
-# Repo reference (helps some links/tools)
-repository: https://uzoamaka1900.github.io/Clarence-Fitzroy-Bryant-College-CFBC-/your-username/your-repo
-source-code: https://uzoamaka1900.github.io/Clarence-Fitzroy-Bryant-College-CFBC-/
+# GitHub repository reference
+repository: "uzoamaka1900/Clarence-Fitzroy-Bryant-College-CFBC-"
+source-code: "https://github.com/uzoamaka1900/Clarence-Fitzroy-Bryant-College-CFBC-"
 
 ##########
 # THEME / PLUGINS
@@ -43,25 +42,26 @@ collections:
 
 ##########
 # NAVIGATION
-# We’re using the CSV you edited for the ECDA-style dropdowns
-navigation_source: _data/config-nav.csv
+# Using CSV-based ECDA-style dropdown menus
+navigation_source: "_data/config-nav.csv"
 
 ##########
 # SEARCH
 lunr_search: true
 
 ##########
-# BRANDING (optional; add your logo paths if you have them)
-# organization-name: "Clarence-Fitzroy-Bryant-College-(CFBC)"
-# organization-link: https://uzoamaka1900.github.io/Clarence-Fitzroy-Bryant-College-CFBC-/
-# organization-logo-banner: /objects/ST.%20KITTS%20AND%20NEVIS%20IN%201988.png
-# organization-logo-nav: /assets/img/logo-nav.png
-# logo_image: /objects/ST.%20KITTS%20AND%20NEVIS%20IN%201988.png
+# BRANDING (optional – update when logos ready)
+# organization-name: "Clarence-Fitzroy-Bryant-College (CFBC)"
+# organization-link: "https://uzoamaka1900.github.io/Clarence-Fitzroy-Bryant-College-CFBC-"
+# organization-logo-banner: "/objects/ST.%20KITTS%20AND%20NEVIS%20IN%201988.png"
+# organization-logo-nav: "/assets/img/logo-nav.png"
+# logo_image: "/objects/ST.%20KITTS%20AND%20NEVIS%20IN%201988.png"
 
 ##########
 # FOOTER
 footer_credit: >
-  This project was created using <a href="https://collectionbuilder.github.io/">CollectionBuilder-GH</a>. Content © Your Organization.
+  This project was created using <a href="https://collectionbuilder.github.io/">CollectionBuilder-GH</a>. 
+  Content © Clarence-Fitzroy-Bryant-College (CFBC).
 
 ##########
 # BUILD SETTINGS
