@@ -1,1 +1,14 @@
+/* Make non-link dropdown parents look like headers */
+.navbar .dropdown > a[href="#"] {
+  cursor: default;
+  pointer-events: none;
+  font-weight: 600;
+}
+
+/* (optional) keep the caret clickable for accessibility if present */
+.navbar .dropdown > a[href="#"] .dropdown-toggle,
+.navbar .dropdown > a[href="#"] .caret {
+  pointer-events: auto;
+  cursor: pointer;
+}
 
