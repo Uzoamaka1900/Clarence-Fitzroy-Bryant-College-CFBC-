@@ -1,0 +1,25 @@
+/* CFBC brand palette */
+$cfbc-mauve: #a86a81;
+$cfbc-teal:  #1a566c;
+$cfbc-link:  #b27229;
+
+.btn-primary {
+  background-color: $cfbc-teal;
+  border-color: $cfbc-teal;
+}
+
+a {
+  color: $cfbc-link;
+}
+
+/* Decolonizing strip background */
+.cfbc-mauve {
+  background: $cfbc-mauve;
+}
+
+/* Make dropdown parent non-clickable */
+.navbar .dropdown > a[href="#"] {
+  cursor: default;
+  pointer-events: none;
+  font-weight: 600;
+}
