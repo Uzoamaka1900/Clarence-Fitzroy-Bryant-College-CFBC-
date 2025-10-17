@@ -1,7 +1,6 @@
 ---
 layout: page
-title: "Resources for Teachers"
-permalink: /classroom/resources-teachers/
+title: "Featured Student Projects"
+permalink: /classroom/featured-projects/
 ---
-Assignments, rubrics, lesson plans.
-
+Selected class projects built from the collection.
