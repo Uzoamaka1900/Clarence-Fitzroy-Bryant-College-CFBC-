@@ -1,65 +1,78 @@
 ##########
 # collectionbuilder-gh
-# Jekyll Digital Collection Generator, designed for GitHub Pages
+# Jekyll Digital Collection Generator (GitHub Pages)
 # https://github.com/CollectionBuilder/collectionbuilder-gh
 ##########
 
 ##########
-# URL VARIABLES [optional if using GitHub Pages!]
-#
-# url is site domain, full URL to the production location of your collection
-# on GitHub Pages follows the pattern username.github.io
-#url: https://collectionbuilder.github.io 
-# baseurl is path to location on the domain if necessary e.g. /digital/hjccc
-# on GitHub Pages it is your github repository's name prefixed with a /
-#baseurl: /collectionbuilder-gh 
-# location of code, the full url to your github repository
-source-code: https://github.com/CollectionBuilder/collectionbuilder-gh
+# SITE IDENTITY
+title: "Clarence-Fitzroy-Bryant-College-(CFBC)"
+tagline: "Open access collection of texts, maps, and images"
+description: "A digital collection on the history of Clarence Fitzroy Bryant College (CFBC_."
+author: "Liburd Tavernier, Willa "
 
 ##########
-# SITE SETTINGS
-#
-# title of site appears in banner
-title: CollectionBuilder-GH 
-# tagline, a short phrase that will appear throughout the site in the top banner
-tagline: a template for creating simple digital exhibits
-# description appears in meta tags and other locations
-# this description might appear in search result lists, keep around 160 characters max
-description: "CollectionBuilder-GH is a template for creating small digital collection exhibits on GitHub Pages designed for teaching digital library skills"
-# creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
-author: CollectionBuilder
+# URLS (set these to match your GitHub Pages setup)
+# If this is a *project* site: url = https://<user>.github.io  AND baseurl = /<repo>
+# If this is a *user/org* site: url = https://<user>.github.io AND baseurl = ""
+url: "https://uzoamaka1900.github.io/Clarence-Fitzroy-Bryant-College-CFBC-/"
+baseurl: "/your-repo"
+
+# Repo reference (helps some links/tools)
+repository: https://uzoamaka1900.github.io/Clarence-Fitzroy-Bryant-College-CFBC-/your-username/your-repo
+source-code: https://uzoamaka1900.github.io/Clarence-Fitzroy-Bryant-College-CFBC-/
+
+##########
+# THEME / PLUGINS
+remote_theme: collectionbuilder/collectionbuilder-gh
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
 
 ##########
 # COLLECTION SETTINGS
-#
-# Set the metadata for your collection (the name of the csv file in your _data directory that describes the objects in your collection) 
-# Use the filename of your CSV **without** the ".csv" extension! E.g. _data/demo-metadata.csv --> "demo-metadata"
+# Use your metadata CSV file name (without .csv) located in _data/
 metadata: demo-metadata
 
-##########
-# Site/Organization Branding 
-#   Uncomment these and enter information for your organization (replacing the CDIL links and name below) if you'd like to brand your site with a logo
-#
-# organization-name: "Center for Digital Inquiry and Learning (CDIL)"
-# organization-link: https://cdil.lib.uidaho.edu/
-# organization-logo-banner: https://cdil.lib.uidaho.edu/storying-extinction/assets/img/cdil.png
-# organization-logo-nav: https://cdil.lib.uidaho.edu/assets/img/logo.png
+collections:
+  items:
+    output: true
 
 ##########
-# ROBOTS EXCLUDE
-#
-# set noindex to true if you do NOT want Google to index your site
-# noindex: true 
+# NAVIGATION
+# We’re using the CSV you edited for the ECDA-style dropdowns
+navigation_source: _data/config-nav.csv
 
 ##########
-# BUILD SETTINGS 
-#
-# Note: use environment variable on build command to include analytics
-# JEKYLL_ENV=production jekyll build
-# (this is done automatically by gh-pages build)
-#
-# ignore stuff
-exclude: [docs/, Rakefile, README.md, LICENSE, CITATION.cff, CODE_OF_CONDUCT.md, CONTRIBUTING.md]
-# compress CSS output
+# SEARCH
+lunr_search: true
+
+##########
+# BRANDING (optional; add your logo paths if you have them)
+# organization-name: "Clarence-Fitzroy-Bryant-College-(CFBC)"
+# organization-link: https://uzoamaka1900.github.io/Clarence-Fitzroy-Bryant-College-CFBC-/
+# organization-logo-banner: /objects/ST.%20KITTS%20AND%20NEVIS%20IN%201988.png
+# organization-logo-nav: /assets/img/logo-nav.png
+# logo_image: /objects/ST.%20KITTS%20AND%20NEVIS%20IN%201988.png
+
+##########
+# FOOTER
+footer_credit: >
+  This project was created using <a href="https://collectionbuilder.github.io/">CollectionBuilder-GH</a>. Content © Your Organization.
+
+##########
+# BUILD SETTINGS
+exclude:
+  - docs/
+  - Rakefile
+  - README.md
+  - LICENSE
+  - CITATION.cff
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+
 sass:
   style: compressed
