@@ -1,9 +1,52 @@
-display_name,stub,dropdown_parent
-Home,/
-Browse,/browse.html
-Subjects,/subjects.html
-Locations,/locations.html
-Map,/map.html
-Timeline,/timeline.html
-Data,/data.html
-About,/about.html
+- text: "About"
+  href: "#"
+  sub:
+    - text: "About"
+      href: "/about/"
+    - text: "Who We Are"
+      href: "/about/credit/"
+    - text: "Decolonizing the Archive"
+      href: "/about/decolonizing-the-archive/"
+    - text: "Projects We Love"
+      href: "/about/resources/"
+    - text: "Contact Us"
+      href: "/about/contact/"
+- text: "Archive"
+  href: "#"
+  sub:
+    - text: "About the Archive"
+      href: "/archive/about/"
+    - text: "Browse"
+      href: "/browse.html"      # CB’s browse page
+    - text: "Contribute"
+      href: "/archive/contribute/"
+- text: "Classroom"
+  href: "#"
+  sub:
+    - text: "About the Classroom"
+      href: "/classroom/"
+    - text: "Teaching Partners"
+      href: "/classroom/partners/"
+    - text: "Resources for Teachers"
+      href: "/classroom/resources-teachers/"
+    - text: "Resources for Students & Researchers"
+      href: "/classroom/resources-students/"
+    - text: "Featured Student Projects"
+      href: "/classroom/featured-projects/"
+- text: "Exhibits"
+  href: "#"
+  sub:
+    - text: "About Exhibits"
+      href: "/exhibits/"
+    - text: "Early Caribbean Slave Narratives"
+      href: "/exhibits/early-caribbean/"
+    - text: "Visualizing Natural History"
+      href: "/exhibits/natural-history/"
+    - text: "Obeah: “Magical Art of Resistance”"
+      href: "/exhibits/obeah/"
+    - text: "The Jamaican Airs"
+      href: "/exhibits/jamaican-airs/"
+    - text: "Carnival: Introduction"
+      href: "/exhibits/carnival-intro/"
+- text: "Blog"
+  href: "/blog/"
