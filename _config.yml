@@ -50,12 +50,12 @@ navigation_source: "_data/config-nav.csv"
 lunr_search: true
 
 ##########
-# BRANDING (optional – update when logos ready)
-# organization-name: "Clarence-Fitzroy-Bryant College (CFBC)"
-# organization-link: "https://uzoamaka1900.github.io/Clarence-Fitzroy-Bryant-College-CFBC-/"
-# organization-logo-banner: "/objects/ST.%20KITTS%20AND%20NEVIS%20IN%201988.png"
-# organization-logo-nav: "/assets/img/logo-nav.png"
-# logo_image: "/objects/ST.%20KITTS%20AND%20NEVIS%20IN%201988.png"
+# BRANDING
+organization-name: "Clarence-Fitzroy-Bryant College (CFBC)"
+organization-link: "https://uzoamaka1900.github.io/Clarence-Fitzroy-Bryant-College-CFBC-/"
+organization-logo-banner: "/assets/img/cfbc-crest.png"
+organization-logo-nav: "/assets/img/cfbc-crest.png"
+logo_image: "/assets/img/cfbc-crest.png"
 
 ##########
 # FOOTER
