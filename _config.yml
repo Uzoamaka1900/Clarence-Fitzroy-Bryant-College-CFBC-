@@ -57,6 +57,16 @@ organization-logo-banner: "/assets/img/cfbc-crest.png"
 organization-logo-nav: "/assets/img/cfbc-crest.png"
 logo_image: "/assets/img/cfbc-crest.png"
 
+# ——— Custom visual variables you can use in includes/CSS ———
+brand_images:
+  title_background: "/assets/img/background.jpg"   # hero/title-band background
+  crest: "/assets/img/cfbc-crest.png"              # crest path (same as above)
+
+# Feature flags (handy if you toggle custom header/title later)
+features:
+  use_custom_header: true
+  use_title_background: true
+
 ##########
 # FOOTER
 footer_credit: >
