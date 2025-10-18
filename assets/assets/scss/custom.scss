@@ -24,3 +24,22 @@ header.site-header p {
   header.site-header { padding: 3rem 0; }
   header.site-header h1 { font-size: 1.75rem; }
 }
+
+/* ==== Title banner background image ==== */
+.hero-bg {
+  background: url('{{ "/assets/img/background.jpg" | relative_url }}') center/cover no-repeat;
+  color: #fff;
+}
+.hero-bg h1,
+.hero-bg p {
+  color: #fff !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,.45);
+}
+
+/* Optional darker veil for readability */
+.hero-bg::before{
+  content:"";
+  position:absolute; inset:0;
+  background: rgba(0,0,0,.25);
+}
+.hero-bg{ position: relative; }
