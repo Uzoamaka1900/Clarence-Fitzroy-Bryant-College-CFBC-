@@ -1,9 +1,21 @@
-{%- comment -%} Title bar with background image {%- endcomment -%}
-<div class="site-title hero-bg">
-  <div class="container py-5">
-    <h1 class="display-4 m-0">{{ site.title }}</h1>
+{%- comment -%}
+Custom Title Banner with Background Image (CFBC)
+{%- endcomment -%}
+
+<div class="site-title"
+     style="background:url('{{ site.brand_images.title_background | relative_url }}') center/cover no-repeat;">
+  
+  <!-- Overlay for dark contrast -->
+  <div style="position:absolute; inset:0; background: rgba(0,0,0,.25); pointer-events:none;"></div>
+
+  <div class="container py-5 position-relative" style="z-index: 1;">
+    <h1 class="display-4 m-0 text-white" style="text-shadow:0 2px 4px rgba(0,0,0,.45);">
+      {{ site.title }}
+    </h1>
     {%- if site.tagline -%}
-    <p class="lead m-0">{{ site.tagline }}</p>
+    <p class="lead m-0 text-white" style="text-shadow:0 2px 4px rgba(0,0,0,.45);">
+      {{ site.tagline }}
+    </p>
     {%- endif -%}
   </div>
 </div>
