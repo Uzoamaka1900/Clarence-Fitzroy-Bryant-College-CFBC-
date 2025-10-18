@@ -43,3 +43,39 @@ header.site-header p {
   background: rgba(0,0,0,.25);
 }
 .hero-bg{ position: relative; }
+
+/* ===== Title band background image that works with baseurl ===== */
+/* The compiled CSS is /assets/css/style.css, so ../img maps to /assets/img */
+.site-title {
+  position: relative;
+  background: url('../img/background.jpg') center/cover no-repeat;
+  color: #fff;
+}
+
+/* add a subtle dark veil for readability */
+.site-title::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.25);
+}
+
+/* ensure content sits above the veil & create some height */
+.site-title .container {
+  position: relative;
+  z-index: 1;
+  padding: 4rem 0;        /* adjust banner height */
+}
+
+.site-title h1,
+.site-title p {
+  color: #fff !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,.45);
+  margin-bottom: .25rem;
+}
+
+@media (max-width: 576px){
+  .site-title .container { padding: 3rem 0; }
+  .site-title h1 { font-size: 1.75rem; }
+}
+
